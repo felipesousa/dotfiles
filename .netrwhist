@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/Users/felipesousa/Documents/projects/spyt/src/App'
+let g:netrw_dirhist_4='/Users/felipesousa/Documents/projects/github-profile-search/src/components/shared/Logo'
+let g:netrw_dirhist_3='/Users/felipesousa/Documents/projects/github-profile-search/src/screens/Search'
+let g:netrw_dirhist_2='/Users/felipesousa/.config/nvim'
+let g:netrw_dirhist_1='/Users/felipesousa/.config/nvim/vim-plug'
