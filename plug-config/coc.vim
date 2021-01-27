@@ -1,3 +1,6 @@
+" Packages
+let g:coc_global_extensions = ['coc-json', 'coc-css', 'coc-yank', 'coc-html', 'coc-eslint', 'coc-snippets', 'coc-explorer', 'coc-tsserver', 'coc-prettier']
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -159,3 +162,7 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear

@@ -22,6 +22,4 @@ set tabstop=2 shiftwidth=2 expandtab
 set inccommand=split
 set rtp+=/usr/local/opt/fzf
 
-autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact
-autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
-autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+let g:coc_global_extensions = ['coc-json', 'coc-css', 'coc-yank', 'coc-html', 'coc-eslint', 'coc-snippets', 'coc-explorer', 'coc-tsserver', 'coc-prettier']
