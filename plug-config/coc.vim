@@ -1,5 +1,5 @@
 " Packages
-let g:coc_global_extensions = ['coc-json', 'coc-css', 'coc-yank', 'coc-html', 'coc-eslint', 'coc-snippets', 'coc-explorer', 'coc-tsserver', 'coc-prettier']
+let g:coc_global_extensions = ['coc-emmet', 'coc-json', 'coc-css', 'coc-yank', 'coc-html', 'coc-eslint', 'coc-snippets', 'coc-explorer', 'coc-tsserver', 'coc-prettier']
 
 " TextEdit might fail if hidden is not set.
 set hidden
