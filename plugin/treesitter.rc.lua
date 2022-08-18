@@ -19,6 +19,7 @@ ts.setup {
     "yaml",
     "swift",
     "css",
+    "javascript",
     "html",
     "lua"
   },
