@@ -25,3 +25,6 @@ keymap.set('', 'sh', '<C-w>h')
 keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
+
+-- Remove search match
+keymap.set('', 'n', ':nohlsearch<CR>')
