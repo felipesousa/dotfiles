@@ -48,4 +48,5 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
 
   use 'matze/vim-move'
+  use 'mg979/vim-visual-multi'
 end)
