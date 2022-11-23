@@ -1,6 +1,5 @@
 local keymap = vim.keymap
 
--- took me a long time to figure out how to change the leader key in lua
 keymap.set('n', 'x', '"_x')
 
 -- Increment/decrement
