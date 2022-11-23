@@ -12,12 +12,8 @@ ts.setup {
   },
   ensure_installed = {
     "tsx",
-    "toml",
-    "fish",
-    "php",
     "json",
     "yaml",
-    "swift",
     "css",
     "javascript",
     "html",

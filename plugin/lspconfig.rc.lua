@@ -1,3 +1,22 @@
+local status2, mason = pcall(require, "mason")
+if (not status2) then return end
+
+mason.setup()
+
+local status3, mason_lsp_config = pcall(require, "mason-lspconfig")
+if (not status3) then return end
+
+mason_lsp_config.setup({
+  ensure_installed = {
+    "gopls",
+    "sumneko_lua",
+    "jsonls",
+    "emmet_ls",
+    "tailwindcss",
+    "tsserver",
+  }
+})
+
 local status, nvim_lsp = pcall(require, "lspconfig")
 if (not status) then return end
 
@@ -97,6 +116,18 @@ nvim_lsp.sumneko_lua.setup {
 }
 
 nvim_lsp.tailwindcss.setup {}
+
+nvim_lsp.gopls.setup {
+  on_attach = on_attach
+}
+
+nvim_lsp.emmet_ls.setup {
+  on_attach = on_attach
+}
+
+nvim_lsp.jsonls.setup({
+  on_attach = on_attach,
+})
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
